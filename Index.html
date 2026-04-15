@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jagruti Weds Ankit | 5 May 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Devanagari:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <!-- <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-om">
+       <p>🎊🎊</p>
+      </div>
+      <div class="loader-text" data-hi="शुभ विवाह" data-en="Shubh Vivah">शुभ विवाह</div>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- ============================== -->
+<div id="loader">
+  <div class="loader-inner">
+
+    <img 
+      src="assets/welcome_invitation_2.gif" 
+      alt="Welcome"
+      class="loader-gif"
+      onerror="this.style.display='none'"
+    />
+
+    <div class="loader-text">
+      ✨!! शुभ विवाह !!✨
+    </div>
+
+  </div>
+</div>
+
+  <!-- <img style="width: 100vw; height: 100vh;opacity: 20%; position: absolute; top: 0; z-index: 1;"  src="./assets/wallpaper.webp" style="width: 100vw; height: 100vh;"/> -->
+
+  <!-- ===== FLOATING PETALS ===== -->
+  <div id="petals-container" aria-hidden="true"></div>
+
+  <!-- ===== MUSIC BUTTON ===== -->
+  <!-- <button id="music-btn" title="Toggle Music" aria-label="Toggle background music">
+    <span id="music-icon">🎵</span>
+  </button>
+  <audio id="bg-music" loop>
+  <source src="assets/Apna Bana Le Instrumental (Slowed and Reverb)  Bhediya  Headphones Reccomended.mp3" type="audio/mpeg">
+</audio> -->
+
+<button id="music-btn" title="Toggle Music">
+  <span id="music-icon">🎵</span>
+</button>
+
+<audio id="bg-music" loop autoplay muted>
+  <source src="assets/ganga_ke_kinare.mpeg" type="audio/mpeg">
+</audio>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#hero"        data-hi="घर"       data-en="Home">घर</a></li>
+      <li><a href="#invitation"  data-hi="निमंत्रण"  data-en="Invite">निमंत्रण</a></li>
+      <li><a href="#events"      data-hi="कार्यक्रम" data-en="Events">कार्यक्रम</a></li>
+      <li><a href="#family"      data-hi="परिवार"    data-en="Family">परिवार</a></li>
+      <li><a href="#countdown"   data-hi="समय"       data-en="Timer">समय</a></li>
+      <li><a href="#gallery"     data-hi="गैलरी"     data-en="Gallery">गैलरी</a></li>
+      <li><a href="#venue"       data-hi="स्थान"     data-en="Venue">स्थान</a></li>
+    </ul>
+  </nav>
+
+    <!-- ===== LANGUAGE TOGGLE ===== -->
+  <button id="lang-btn" aria-label="Toggle language">हिंदी | English</button>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content">
+      <div class="ganesh-wrap animate-pop">
+        <img src="assets/ganeshJiLoader.jpg" style="border-radius: 50%;" widht="60" alt="Shree Ganesh" class="ganesh-img" onerror="this.style.fontSize='80px';this.outerHTML='<div class=ganesh-fallback></div>'" />
+      </div>
+      <p class="shri-text animate-fade-up" data-hi="|| श्री गणेशाय नमः ||" data-en="|| Shri Ganeshaya Namah ||">|| श्री गणेशाय नमः ||</p>
+      <div class="divider-ornament animate-fade-up delay-1">🙏</div>
+      <h1 class="couple-names animate-fade-up delay-2">
+        <span class="name-hi" data-hi="जागृति" data-en="Jagrati">जागृति</span>
+        <span class="weds-text" data-hi="संग" data-en="weds">संग</span>
+        <span class="name-hi" data-hi="अंकित" data-en="Ankit">अंकित</span>
+      </h1>
+      <p class="couple-names-en animate-fade-up delay-3" data-hi="Jagrati ❤️ Ankit" data-en="Jagrati ❤️ Ankit">Jagrati ❤️ Ankit</p>
+      <div class="date-badge animate-fade-up delay-4">
+        <span class="date-icon">📅</span>
+        <span data-hi="मंगलवार, 5 मई 2026" data-en="Tuesday, 5 May 2026">मंगलवार, 5 मई २०२६</span>
+      </div>
+      <a href="#invitation" class="hero-cta animate-fade-up delay-5" data-hi="निमंत्रण देखें ↓" data-en="View Invitation ↓">निमंत्रण देखें ↓</a>
+    </div>
+    <div class="hero-border-bottom"></div>
+  </section>
+
+  <!-- ===== INVITATION MESSAGE ===== -->
+  <section id="invitation" class="section">
+    <div class="section-header reveal">
+      <div class="ornament">✦✦✦✦✦✦</div>
+      <h2 data-hi="!! शुभ निमंत्रण !!" data-en="!! Auspicious Invitation !!">!! शुभ निमंत्रण !!</h2>
+      <div class="ornament">✦✦✦✦✦✦</div>
+    </div>
+    <div class="invite-card reveal delay-1">
+      <div class="invite-corner tl"></div>
+      <div class="invite-corner tr"></div>
+      <div class="invite-corner bl"></div>
+      <div class="invite-corner br"></div>
+      <p class="invite-text"
+        data-hi="ईश्वर की असीम कृपा से हमारे परिवार में यह शुभ अवसर आया है कि हमारी प्रिय जागृति संग अंकित का पावन विवाह समारोह आयोजित है। आप सपरिवार पधारकर हमें अनुग्रहित करें।"
+        data-en="With the divine blessings of God, a joyous occasion has graced our family. We cordially invite you with your family to celebrate the sacred wedding ceremony of our beloved Jagrati and Ankit.">
+        ईश्वर की असीम कृपा से हमारे परिवार में यह शुभ अवसर आया है कि हमारी प्रिय जागृति संग अंकित का पावन विवाह समारोह आयोजित है। आप सपरिवार पधारकर हमें अनुग्रहित करें।
+      </p>
+      <div class="invite-divider">🌸🌸 ❀ 🌸🌸</div>
+      <p class="invite-sub"
+        data-hi="आपकी उपस्थिति हमारे लिए सबसे बड़ा आशीर्वाद होगी।"
+        data-en="Your presence will be our greatest blessing.">
+        आपकी उपस्थिति हमारे लिए सबसे बड़ा आशीर्वाद होगी।
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== EVENT DETAILS ===== -->
+  <section id="events" class="section section-alt">
+    <div class="section-header reveal">
+      <div class="ornament">✦✦✦✦✦✦</div>
+      <h2 data-hi="!! कार्यक्रम विवरण !!" data-en="!! Event Details !!">!! कार्यक्रम विवरण !!</h2>
+      <div class="ornament">✦✦✦✦✦✦</div>
+    </div>
+    <div class="events-grid">
+      <!-- Haldi -->
+      <div class="event-card reveal delay-1">
+        <div class="event-icon">🌼</div>
+        <h3 data-hi="हल्दी समारोह" data-en="Haldi Ceremony">हल्दी समारोह</h3>
+        <p data-hi="4 मई 2026" data-en="4 May 2026">4 मई 2026</p>
+        <!-- <p data-hi="प्रातः 9:00 बजे" data-en="9:00 AM">प्रातः 9:00 बजे</p>
+        <p class="event-venue" data-hi="राजराजेश्वरी लॉन, गंगानगर" data-en="Rajrajeshri Lawn, Ganganagar">राजराजेश्वरी लॉन, गंगानगर</p> -->
+      </div>
+      <!-- Mehendi -->
+      <div class="event-card reveal delay-2">
+        <div class="event-icon">🌿</div>
+        <h3 data-hi="मेहंदी संध्या" data-en="Mehendi Evening">मेहंदी संध्या</h3>
+        <p data-hi="4 मई 2026" data-en="4 May 2026">4 मई 2026</p>
+        <!-- <p data-hi="सायं 5:०० बजे" data-en="5:00 PM">सायं 5:०० बजे</p>
+        <p class="event-venue" data-hi="राजराजेश्वरी लॉन, गंगानगर" data-en="Rajrajeshri Lawn, Ganganagar">राजराजेश्वरी लॉन, गंगानगर</p> -->
+      </div>
+      <!-- Wedding -->
+      <div class="event-card featured reveal delay-3">
+        <div class="event-icon">💍</div>
+        <h3 data-hi="विवाह समारोह" data-en="Wedding Ceremony">विवाह समारोह</h3>
+        <p data-hi="मंगलवार, 5 मई 2026" data-en="Tuesday, 5 May 2026">मंगलवार, 5 मई 2026</p>
+        <p data-hi="सायं 7:00 बजे" data-en="7:00 PM">सायं 7:00 बजे</p>
+        <p class="event-venue" data-hi="राज शशि लॉन, गंगानगर (छिंदवाड़ा रोड) सिवनी" data-en="Raj  Shashi Lawn, Ganganagar (Chhindwara Road) Seoni">राज शशि लॉन, गंगानगर (छिंदवाड़ा रोड)</p>
+      </div>
+      <!-- Reception -->
+      <div class="event-card reveal delay-4">
+        <div class="event-icon">🎊</div>
+        <h3 data-hi="स्वागत समारोह" data-en="Reception">स्वागत समारोह</h3>
+        <p data-hi="5 मई 2026" data-en="5 May 2026">5 मई 2026</p>
+        <p data-hi="रात्रि 7:०० बजे" data-en="7:00 PM">रात्रि 7:०० बजे</p>
+        <p class="event-venue" data-hi="राज शशि लॉन, गंगानगर सिवनी" data-en="Raj  Shashi Lawn, Ganganagar Seoni">राज शशि लॉन, गंगानगर सिवनी</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAMILY DETAILS ===== -->
+  <section id="family" class="section">
+    <div class="section-header reveal">
+      <div class="ornament">✦✦✦✦✦✦</div>
+      <h2 data-hi="!! परिवार परिचय !!" data-en="!! Our Families !!">!! परिवार परिचय !!</h2>
+      <div class="ornament">✦✦✦✦✦✦</div>
+    </div>
+    <div class="family-grid">
+      <!-- Bride's family -->
+      <div class="family-card bride-side reveal delay-1">
+        <div class="family-badge" data-hi="वधू पक्ष" data-en="Bride's Side">वधू पक्ष</div>
+        <div class="family-icon">🌸</div>
+        <h3 data-hi="जागृति" data-en="Jagrati">जागृति</h3>
+        <div class="family-details">
+          <p>
+            <span class="label" data-hi="पिता:" data-en="Father:">पिता:</span>
+            <span data-hi="श्री जागेश्वर प्रसाद नामदेव जी" data-en="Shri Jageshwar Prasad namdev">श्री जागेश्वर प्रसाद नामदेव जी</span>
+          </p>
+          <p>
+            <span class="label" data-hi="माता:" data-en="Mother:">माता:</span>
+            <span data-hi="श्रीमती अनुराधा नामदेव जी" data-en="Smt. Anuradha namdeo">श्रीमती अनुराधा नामदेव जी</span>
+          </p>
+          <p>
+            <span class="label" data-hi="निवास:" data-en="Residence:">निवास:</span>
+            <span data-hi="सिवनी, म.प्र." data-en="Seoni, M.P.">सिवनी , म.प्र.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="family-divider reveal delay-2">
+        <div class="divider-text" data-hi="💞" data-en="💞">💞</div>
+      </div>
+
+      <!-- Groom's family -->
+      <div class="family-card groom-side reveal delay-3">
+        <div class="family-badge" data-hi="वर पक्ष" data-en="Groom's Side">वर पक्ष</div>
+        <div class="family-icon">🌺</div>
+        <h3 data-hi="अंकित" data-en="Ankit">अंकित</h3>
+        <div class="family-details">
+          <p>
+            <span class="label" data-hi="पिता:" data-en="Father:">पिता:</span>
+            <span data-hi="श्री ताप्ति प्रसाद नामदेव जी" data-en="Shri Tapti Prasad namdev">श्री ताप्ति प्रसाद नामदेव जी</span>
+          </p>
+          <p>
+            <span class="label" data-hi="माता:" data-en="Mother:">माता:</span>
+            <span data-hi="श्रीमती गीता नामदेव" data-en="Smt. Geeta Namdev">श्रीमती गीता नामदेव</span>
+          </p>
+          <p>
+            <span class="label" data-hi="निवास:" data-en="Residence:">निवास:</span>
+            <span data-hi="बैतूल , म.प्र." data-en="Betul, M.P.">बैतूल , म.प्र.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COUNTDOWN TIMER ===== -->
+  <section id="countdown" class="section section-alt">
+    <div class="section-header reveal">
+      <div class="ornament">✦✦✦✦✦✦</div>
+      <h2 data-hi="!! शुभ मुहूर्त !!" data-en="!! Auspicious Moment !!">!! शुभ मुहूर्त !!</h2>
+      <div class="ornament">✦✦✦✦✦✦</div>
+    </div>
+    <p class="countdown-subtitle reveal" data-hi="विवाह में शेष समय" data-en="Time Remaining for Wedding">विवाह में शेष समय</p>
+    <div class="countdown-grid reveal delay-1">
+      <div class="countdown-unit">
+        <div class="countdown-num" id="cd-days">00</div>
+        <div class="countdown-label" data-hi="दिन" data-en="Days">दिन</div>
+      </div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-unit">
+        <div class="countdown-num" id="cd-hours">00</div>
+        <div class="countdown-label" data-hi="घंटे" data-en="Hours">घंटे</div>
+      </div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-unit">
+        <div class="countdown-num" id="cd-mins">00</div>
+        <div class="countdown-label" data-hi="मिनट" data-en="Minutes">मिनट</div>
+      </div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-unit">
+        <div class="countdown-num" id="cd-secs">00</div>
+        <div class="countdown-label" data-hi="सेकंड" data-en="Seconds">सेकंड</div>
+      </div>
+    </div>
+    <p id="countdown-done" class="countdown-done hidden" data-hi="🎉 शुभ विवाह! आज वो मंगलमय दिन है! 🎉" data-en="🎉 Happy Wedding Day! The auspicious day is here! 🎉"></p>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery" class="section">
+    <div class="section-header reveal">
+      <div class="ornament">✦✦✦✦✦✦</div>
+      <h2 data-hi="!! गैलरी !!" data-en="!! Gallery !!">!! गैलरी !!</h2>
+      <div class="ornament">✦✦✦✦✦✦</div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal delay-1">
+        <div class="gallery-img-wrap" >
+          <img src="assets/Gemini_Generated_Bride.png" alt="Bride - Jagrati" style="object-fit: contain;"
+            onerror="this.parentNode.innerHTML='<div class=gallery-placeholder><span>🌸</span><p data-hi=\'जागृति\' data-en=\'Jagruti\'>जागृति</p></div>'" />
+        </div>
+        <p class="gallery-caption" data-hi="जागृति" data-en="Jagrati">जागृति</p>
+      </div>
+      <div class="gallery-item center-gallery reveal delay-2">
+        <div class="gallery-img-wrap center-img">
+          <div class="gallery-placeholder couple">
+            <!-- <span>💑</span>
+            <p data-hi="जागृति & अंकित" data-en="Jagrati & Ankit">जागृति & अंकित</p> -->
+                      <img src="assets/love-arya-SUwPo4ErQCc-unsplash.jpg" alt="Bride - Jagrati" style="object-fit: contain;"
+            onerror="this.parentNode.innerHTML='<div class=gallery-placeholder><span>🌸</span><p data-hi=\'जागृति\' data-en=\'Jagruti\'>जागृति</p></div>'" />
+          </div>
+        </div>
+        <p class="gallery-caption" data-hi="जागृति ❣️ अंकित" data-en="Jagrati ❣️ Ankit">जागृति ❣️ अंकित</p>
+      </div>
+      <div class="gallery-item reveal delay-3">
+        <div class="gallery-img-wrap">
+          <img src="assets/Gemini_Generated_Image_groom.png" alt="Groom - Ankit" style="object-fit: contain;"
+            onerror="this.parentNode.innerHTML='<div class=gallery-placeholder><span>🌺</span><p data-hi=\'अंकित\' data-en=\'Ankit\'>अंकित</p></div>'" />
+        </div>
+        <p class="gallery-caption" data-hi="अंकित" data-en="Ankit">अंकित</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VENUE / MAP ===== -->
+  <section id="venue" class="section section-alt">
+    <div class="section-header reveal">
+      <div class="ornament">✦✦✦✦✦✦</div>
+      <h2 data-hi="!! विवाह स्थल !!" data-en="!! Wedding Venue !!">!! विवाह स्थल !!</h2>
+      <div class="ornament">✦✦✦✦✦✦</div>
+    </div>
+    <div class="venue-card reveal delay-1">
+      <div class="venue-icon">📍</div>
+      <h3 data-hi="राज शशि लॉन" data-en="Raj  Shashi Lawn">राज शशि लॉन</h3>
+      <p data-hi="गंगानगर, छिंदवाड़ा रोड, सिवनी" data-en="Ganganagar, Chhindwara Road, Seoni">गंगानगर, छिंदवाड़ा रोड, सिवनी</p>
+      <a href="https://www.google.com/maps/place/%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%B6%E0%A4%B6%E0%A5%80+%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A4%BF%E0%A4%9C+%E0%A4%B2%E0%A4%BE%E0%A4%A8%E0%A4%82/@22.0738543,79.5241361,17z/data=!3m1!4b1!4m6!3m5!1s0x3a2ab11cf13216c5:0x14b73ef49f4eed6!8m2!3d22.0738543!4d79.5241361!16s%2Fg%2F11q8k088ty?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="map-btn">
+        <span>📍</span>
+        <span data-hi="स्थान देखें" data-en="View Location">स्थान देखें</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <!-- <div class="footer-ornament">❧ ✦ ❧</div> -->
+     ───────❀❀❀❀❀────────
+    <p class="footer-tagline" data-hi="स्नेह आमंत्रण एवं स्नेहभोज" data-en="With Love & Warm Hospitality">स्नेह आमंत्रण एवं स्नेहभोज</p>
+    <div class="footer-names" data-hi="जागृति 💞 अंकित" data-en="Jagrati 💞 Ankit">जागृति 💞 अंकित</div>
+    <p class="footer-date" data-hi="5 मई 2026" data-en="5 May 2026">5 मई 2026</p>
+    <div class="footer-contact">
+      <p data-hi="संपर्क: +91 9993746496" data-en="Contact: +91 9993746496">संपर्क: +91 9993 746 496</p>
+    </div>
+    <p class="footer-small" data-hi="🌸 प्रेम से बनाया गया 🌸" data-en="🌸 Made with love 🌸">🌸प्रेम से बनाया गया 🌸</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
